@@ -1,0 +1,40 @@
+body{
+    font-family: Arial,sans-serif;
+    text-align:center;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+
+.cell {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fruit {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+#level,#score{
+    font-size:20px;
+    margin:10px;
+}
+
+#next-level{
+    padding:10px 20px;
+    font-size:18px;
+}

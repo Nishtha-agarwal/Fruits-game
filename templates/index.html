@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Candy Crush Game</title>
+</head>
+<body>
+    <h1>Candy Crush Game</h1>
+    <div id="level">Level: 1</div>
+    <div id="score">Score: 0</div>
+    <div id="game-container"></div>
+    <button id="next-level" onclick="nextLevel()">Next Level</button>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
