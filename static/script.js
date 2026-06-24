@@ -3,7 +3,7 @@ let selectedCell = null;
 let score = 0;
 let level = 1;
 const gridSize = 8;
-const fruits = ['apple','mango','grapes','banana','kiwi'];
+const fruits = ['apple', 'mango', 'grapes', 'banana', 'kiwi'];
 
 // Fetch and render the grid
 async function fetchGrid() {
@@ -152,8 +152,7 @@ function nextLevel() {
 }
 
 function checkLevelProgression() {
-    const targetScore = level * 300;
-
+    const targetScore = level * 600;
     if (score >= targetScore) {
         if (level < 5) {
             alert(`Level ${level} complete! Moving to Level ${level + 1}`);
